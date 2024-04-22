@@ -6,7 +6,7 @@ import logo from '../assets/KD.png'
 
 const NavbarComp = () => {
   return (
-    <Navbar expand="lg" sticky="top" className="bg-white border-gray-100 shadow  p-3  ">
+    <Navbar expand="lg" sticky="top" className="bg-white max-w-screen border-gray-100 shadow  p-3 ">
     <Container>
       <Navbar.Brand href="#home" className=" font-medium">
         <img alt='logo' src={logo}/>

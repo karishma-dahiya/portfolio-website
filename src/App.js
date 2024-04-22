@@ -92,7 +92,7 @@ function App() {
   return (
     <>
       <NavbarComp/>
-      <div id='home' className='relative flex flex-col gap-6 sm:gap-0 sm:flex-row sm:justify-between sm:px-10 justify-center items-center bg-[#fff3ea] w-full min-h-96  '>
+      <div id='home' className='relative flex flex-col gap-6 sm:gap-0 sm:flex-row sm:justify-between sm:px-10 justify-center items-center bg-[#fff3ea] w-screen min-h-96  '>
       
         <div>
          <h1 className='text-3xl mt-5 sm:mt-0 sm:text-5xl font-bold '>Hey!, I'm Karishma</h1>
@@ -102,7 +102,7 @@ function App() {
           <img className='h-60 sm:h-full ' src={girl} alt='girl'/>
         </div>
       </div>
-      <div id='about' className='flex bg-white py-10 justify-center sm:gap-20'>
+      <div id='about' className='flex bg-white py-10 justify-center sm:gap-20 max-w-screen'>
         <div className='hidden sm:flex'>
           <img className=' ' src={girl2} alt='girl'/>
         </div>
@@ -115,7 +115,7 @@ function App() {
         </div>
       </div>
       <hr/>
-      <div id='skills' className=' flex flex-col justify-center items-center p-8'>
+      <div id='skills' className=' flex flex-col justify-center items-center p-8 max-w-screen'>
         <h5 className='text-xl sm:text-3xl my-3 font-bold'>Skills</h5>
         <div className='flex flex-wrap justify-center gap-3 my-3 sm:max-w-[60%]'>
           {skills.map((a,ind)=>(
@@ -124,7 +124,7 @@ function App() {
         </div>
       </div>
       <hr/>
-      <div id='projects' className='bg- p-5 flex justify-center items-center flex-col bg-[#fff3ea]'>
+      <div id='projects' className='bg- p-5 flex justify-center items-center flex-col bg-[#fff3ea] max-w-screen'>
           <h5 className='text-xl sm:text-3xl my-3 font-bold'>Projects</h5>
           <div className=' flex my-3 flex-wrap justify-center gap-4 '>
             {projects.map((a,ind)=>(
@@ -132,7 +132,7 @@ function App() {
                 <img className='sm:max-w-96 max-w-72' src={a.img} alt='img'/>
                 <h3 className='my-2 text-center font-bold'>{a.name}</h3>
                 <p className='text-wrap   text-sm mx-4 my-2'>{a.description}</p>
-                <div className='flex mx-4 gap-2 text-blue-500 text-sm'>
+                <div className='flex flex-wrap mx-4 gap-2 text-blue-500 text-sm'>
                   {a.tech.map((t,ind)=>(
                     <p key={ind} className='border p-1 rounded-sm'>{t}</p>
                   ))}
