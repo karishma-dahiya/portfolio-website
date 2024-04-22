@@ -128,8 +128,8 @@ function App() {
           <h5 className='text-xl sm:text-3xl my-3 font-bold'>Projects</h5>
           <div className=' flex my-3 flex-wrap justify-center gap-4 '>
             {projects.map((a,ind)=>(
-              <div key={ind} className='border bg-white max-w-96 flex flex-col rounded-md hover:translate-x-px hover:translate-y-1 duration-150 transition-all ease-in-out '>
-                <img className='max-w-96' src={a.img} alt='img'/>
+              <div key={ind} className='border bg-white sm:max-w-96 max-w-72 flex flex-col rounded-md hover:translate-x-px hover:translate-y-1 duration-150 transition-all ease-in-out '>
+                <img className='sm:max-w-96 max-w-72' src={a.img} alt='img'/>
                 <h3 className='my-2 text-center font-bold'>{a.name}</h3>
                 <p className='text-wrap   text-sm mx-4 my-2'>{a.description}</p>
                 <div className='flex mx-4 gap-2 text-blue-500 text-sm'>
