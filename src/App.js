@@ -44,7 +44,7 @@ function App() {
     type();
 
     return () => clearTimeout(intervalId);
-  }, []); // Empty dependency array to run this effect only once
+  }, [phrases]);
 
   const skills = ['JavaScript','HTML','CSS','React.js','React Native','Node.js','Express','Redux','MongoDB','MySQL','Git','Tailwind']
   const projects = [
@@ -129,7 +129,7 @@ function App() {
           <div className=' flex my-3 flex-wrap justify-center gap-4 '>
             {projects.map((a,ind)=>(
               <div key={ind} className='border bg-white max-w-96 flex flex-col rounded-md hover:translate-x-px hover:translate-y-1 duration-150 transition-all ease-in-out '>
-                <img className='max-w-96' src={a.img}/>
+                <img className='max-w-96' src={a.img} alt='img'/>
                 <h3 className='my-2 text-center font-bold'>{a.name}</h3>
                 <p className='text-wrap   text-sm mx-4 my-2'>{a.description}</p>
                 <div className='flex mx-4 gap-2 text-blue-500 text-sm'>
