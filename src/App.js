@@ -14,16 +14,16 @@ import carsapp from './assets/projects/carweb.png'
 
 function App() {
   const [text, setText] = useState('');
-  const phrases = ['Full Stack Developer', 'Programmer']; // Array of phrases to display
 
-  const typingSpeed = 100; // Typing speed: 100 milliseconds
-  const pauseBeforeNextPhrase = 3000; // Pause before typing the next phrase: 1000 milliseconds
+  const typingSpeed = 100;
+  const pauseBeforeNextPhrase = 3000; 
 
   useEffect(() => {
+    const phrases = ['Full Stack Developer', 'Programmer']; 
     let currentIndex = 0;
     let currentText = '';
     let intervalId;
-
+  
     const type = () => {
       if (currentIndex < phrases.length) {
         if (currentText.length < phrases[currentIndex].length) {
@@ -36,15 +36,15 @@ function App() {
           setTimeout(type, pauseBeforeNextPhrase);
         }
       } else {
-        currentIndex = 0; // Reset currentIndex to repeat the phrases
+        currentIndex = 0; 
         setTimeout(type, 5000);
       }
     };
-
+  
     type();
-
+  
     return () => clearTimeout(intervalId);
-  }, [phrases]);
+  }, []);
 
   const skills = ['JavaScript','HTML','CSS','React.js','React Native','Node.js','Express','Redux','MongoDB','MySQL','Git','Tailwind']
   const projects = [
