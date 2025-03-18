@@ -11,6 +11,7 @@ import restaurant from './assets/projects/restaurant.png'
 import landing from './assets/projects/landing.png'
 import dashboard from './assets/projects/admin.png'
 import carsapp from './assets/projects/carweb.png'
+import dsawebsite from './assets/projects/dsawebsite.png'
 
 function App() {
   const [text, setText] = useState('');
@@ -65,12 +66,12 @@ function App() {
       img:dashboard,
     },
     {
-      name:'Restaurant Web Application',
-      description:'React.js-powered web application with different food items to choose from and cart functionality and a sleek interface. ',
-      tech:['ReactJS','Tailwind CSS'],
-      live:'#',
-      github:'https://github.com/karishma-dahiya/BooksApp',
-      img:restaurant,
+      name: 'Direct Selling Agency (DSA) Website',
+      description: 'A simple website featuring Home, About, EMI Calculator, and Contact Us pages for a Direct Selling Agency.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      live: 'https://realturity.vercel.app/', // Add the live link if deployed
+      github: '#', // Add GitHub repo link if available
+      img: dsawebsite, // Replace with the actual image variable
     },
     {
       name:'Landing Page for CA website',
@@ -80,6 +81,15 @@ function App() {
       github:'#',
       img:landing,
     },
+    {
+      name:'Restaurant Web Application',
+      description:'React.js-powered web application with different food items to choose from and cart functionality and a sleek interface. ',
+      tech:['ReactJS','Tailwind CSS'],
+      live:'#',
+      github:'https://github.com/karishma-dahiya/BooksApp',
+      img:restaurant,
+    },
+   
     {
       name:'Car Rental Website',
       description:'Php-powered responsive website which allows users to find the best Paying Guest across major Indian cities.',
@@ -109,7 +119,7 @@ function App() {
         <div className='px-10 sm:px-1 sm:me-10'>
           <h5 className='text-xl  sm:text-start font-bold sm:text-3xl my-3'>About Me</h5>
           <p className='text-sm sm:text-lg max-w-96'>As a full-stack developer, I offer more than just skills. I bring a commitment to excellence and a passion for innovation to every project. With a track record of turning ideas into impactful solutions, I'm ready to contribute my expertise to your team. Let's build something extraordinary together.</p>
-          <a href='https://drive.google.com/file/d/14CvqeHY-K_ZWydLEs6i3ZY2sSee9GZwg/view?usp=sharing' className='my-2'>
+          <a href='https://drive.google.com/file/d/1d3a1kMMxZGShkrKVq1FCePHy7WCbnuFw/view?usp=drive_link' className='my-2'>
             <button className='my-3 text-lg font-medium text-white hover:shadow-md hover:bg-orange-500 bg-secondaryclr p-2 rounded-md'>Resume</button>
           </a>
         </div>
